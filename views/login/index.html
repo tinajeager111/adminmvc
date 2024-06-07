@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+  </head>
+  <body class="h-screen">
+    <div class="grid h-full place-items-center">
+      <div class="bg-blue-500 rounded flex flex-col w-1/2 h-2/4">
+        <h1 class="text-3xl my-7 mx-7">Inicia sesión</h1>
+        <div class="mt-8 grid place-items-center">
+          <input
+            class="w-3/4 bg-transparent border-b border-solid border-black"
+            placeholder="Usuario"
+            type="text"
+            id="inputUser"
+          />
+        </div>
+        <div class="my-8 grid place-items-center">
+          <input
+            class="w-3/4 bg-transparent border-b border-solid border-black"
+            placeholder="Contraseña"
+            type="password"
+            id="inputPassword"
+          />
+        </div>
+        <div class="grid place-items-center my-10">
+          <button id="btn-submit" class="h-11 w-1/2 rounded bg-blue-600">
+            Aceptar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
